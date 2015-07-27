@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: pages
 title: Home
 ---
 <!-- change default to pages to pick up pages.html under _layout to try a different layout -->
@@ -48,7 +48,7 @@ title: Home
   	<ul>
   	  {% for post in site.posts %}
   		<li>
-  		  <a href="{{ post.url }}">{{ post.title }}</a>
+  		  <a href="{{ post.url | remove_first:'/' }}">{{ post.title }}</a>
   		</li>
   	  {% endfor %}
   	</ul>
