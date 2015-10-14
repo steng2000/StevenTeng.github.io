@@ -1,10 +1,11 @@
 <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>IntelliJ 14.1.5 Json Oddity.</h3>
-<h4><b></b>Couple of findings on IntelliJ 14.1.5 running Ubuntu 15.04</b>
+<h4><b>Couple of findings on IntelliJ 14.1.5 running Ubuntu 15.04</b>
 <ul>
-	Creating a json file foo.json show up in the IDE as <b>foo.json</b> but show up as <b>foo</b> in the file system <br>
-	This is on Ubuntu 15.04.  <br>
-	This can wreck havoc on a variety of things. One example: <br>
+	Creating a json file foo.json in the IDE, it is listed as <b>foo.json</b> but in the file system it is <b>foo</b>!!<br>
+	This is observed on Ubuntu 15.04.<br>
+	This can wreck havoc on a variety of things. <br>
+	One example: <br>
 	Using vertx factory to start verticle using "service:foo.json" The file does not exist.<br>
 	Spend hours without getting the expected result.  Discover it only when examining the file system. 
 </ul>
